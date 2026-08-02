@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/zylon-ai
+packages:
+- language: python
+  registry: pypi
+  name: pgpt_python
+  url: https://pypi.org/project/pgpt_python/
+  install: pip install pgpt_python
+  version: 0.1.2
+  repository: https://github.com/zylon-ai/pgpt-python
+  description: PrivateGPT / Zylon Python SDK for interacting with the private AI API layer.
+  official: true
+- language: javascript
+  registry: npm
+  name: privategpt-sdk-web
+  url: https://www.npmjs.com/package/privategpt-sdk-web
+  install: npm install privategpt-sdk-web
+  version: 0.1.1
+  repository: https://github.com/zylon-ai/privategpt-ts
+  description: PrivateGPT / Zylon TypeScript SDK for building against the private AI API.
+  official: true
+- language: shell
+  registry: homebrew
+  name: zylon
+  url: https://github.com/zylon-ai/homebrew-tap
+  install: brew install zylon-ai/tap/zylon
+  repository: https://github.com/zylon-ai/homebrew-tap
+  description: Homebrew tap distributing the Zylon operator CLI (see cli/ artifact).
+  official: true
+notes: >-
+  Zylon's client SDKs are published under the open-source PrivateGPT project
+  (github.com/zylon-ai). The Python SDK (pgpt_python) and TypeScript SDK
+  (privategpt-sdk-web) are the two first-party client libraries; the Homebrew
+  tap distributes the operator CLI binary.

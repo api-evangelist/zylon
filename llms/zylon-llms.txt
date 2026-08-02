@@ -1,0 +1,153 @@
+# Zylon
+
+> Zylon is an enterprise AI platform delivering private generative AI and on-premise AI software for regulated industries, enabling secure deployment inside enterprise infrastructure without external cloud dependencies.
+
+## Docs
+
+- [Changelog](https://docs.zylon.ai/en/changelog/index.md)
+- [Zendesk User Manual – Clients](https://docs.zylon.ai/en/customer-support-manual/zendesk-client-manual.md): How to submit, track, and manage support requests through the Zylon Help Center.
+- [Logging](https://docs.zylon.ai/en/developer-manual/build-with-zylon/backoffice-api/logging.md): Retrieve Zylon platform logs manually from the Backoffice API.
+- [Overview](https://docs.zylon.ai/en/developer-manual/build-with-zylon/backoffice-api/overview.md): Backoffice API endpoints for operational and platform-level workflows.
+- [Database Query tool](https://docs.zylon.ai/en/developer-manual/build-with-zylon/tools/built-in/database-query-tool.md): Query a SQL database from natural language.
+- [Semantic Search tool](https://docs.zylon.ai/en/developer-manual/build-with-zylon/tools/built-in/semantic-search-tool.md): Search your ingested artifacts for relevant chunks during a message.
+- [Tabular Analysis tool](https://docs.zylon.ai/en/developer-manual/build-with-zylon/tools/built-in/tabular-analysis-tool.md): Analyze ingested tabular artifacts during a message.
+- [Web Fetch tool](https://docs.zylon.ai/en/developer-manual/build-with-zylon/tools/built-in/web-fetch-tool.md): Fetch and extract a URL mentioned in the message.
+- [Web Search tool](https://docs.zylon.ai/en/developer-manual/build-with-zylon/tools/built-in/web-search-tool.md): Search the web from a natural language query.
+- [Custom tools](https://docs.zylon.ai/en/developer-manual/build-with-zylon/tools/custom/custom-tools.md): Define your own tools using JSON Schema.
+- [Overview](https://docs.zylon.ai/en/developer-manual/build-with-zylon/tools/introduction-to-tools.md): Enable built-in and custom tools in Messages.
+- [Artifacts](https://docs.zylon.ai/en/developer-manual/build-with-zylon/working-with-artifacts.md): Create and ingest ZylonGPT artifacts for retrieval and context.
+- [Messages](https://docs.zylon.ai/en/developer-manual/build-with-zylon/working-with-messages.md): Message requests with sync, streaming, and async patterns.
+- [Auth](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/authentication/auth.md): Log in and end sessions for Workspace API access.
+- [OpenID & OAuth](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/authentication/openid.md): Start SSO logins and integration OAuth flows for Confluence and SharePoint.
+- [Chats](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/chats/threads.md): Threads, interactions, and one-shot chat endpoints.
+- [Artifacts](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/content/artifacts.md): Workspace artifacts for documents, AI Documents, and connectors.
+- [Analytics](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/general/analytics.md): Track usage totals, rankings, and time series metrics.
+- [Issues](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/general/issues.md): Create and manage user-reported issues.
+- [Overview](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/general/overview.md): Monitoring, reporting, and system endpoints for Workspace API.
+- [Search](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/general/search.md): Search across projects, threads, artifacts, artifact content, and interactions.
+- [System](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/general/system.md): Health checks for workspace availability.
+- [Claromentis Integration](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/integrations/claromentis.md): Sync Claromentis content into your workspace.
+- [Confluence Integration](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/integrations/confluence.md): Read and sync Confluence content into projects.
+- [Filesystem Integration](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/integrations/filesystem.md): Sync files from a shared filesystem into your workspace.
+- [SharePoint Integration](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/integrations/sharepoint.md): Sync SharePoint documents into your workspace.
+- [Overview](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/overview.md): API for automating and managing Zylon Workspace.
+- [Projects](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/projects/project.md): Create projects, update metadata, and run project-scoped chat.
+- [Project Members](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/projects/project-member.md): Add, update, and remove members from a project.
+- [Users](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/users/user.md): Create and manage users, roles, and project access.
+- [Organizations](https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/users/user-organization.md): Read and update the current Workspace organization.
+- [Embeddings](https://docs.zylon.ai/en/developer-manual/build-with-zylon/zylon-gpt-api/embeddings.md): Generate embeddings for semantic search and similarity.
+- [Handling stop reasons](https://docs.zylon.ai/en/developer-manual/build-with-zylon/zylon-gpt-api/handling-stop-reasons.md): Know why a response stopped and how to handle ZylonGPT errors.
+- [Overview](https://docs.zylon.ai/en/developer-manual/build-with-zylon/zylon-gpt-api/overview.md): The ZylonGPT API lets you generate responses, ingest knowledge, create embeddings, and call tools in one flow.
+- [Claude Code](https://docs.zylon.ai/en/developer-manual/get-started/claude-code-setup.md): Configure Claude Code CLI to work with Zylon's AI platform.
+- [Developer Console](https://docs.zylon.ai/en/developer-manual/get-started/developer-console.md): API token management for developers.
+- [Intro to Zylon](https://docs.zylon.ai/en/developer-manual/get-started/intro-to-zylon.md): Self‑hosted AI platform with Anthropic‑compatible Messages endpoints and a Workspace API.
+- [Opencode](https://docs.zylon.ai/en/developer-manual/get-started/opencode-setup.md): Install and configure Opencode CLI to work with Zylon's AI platform.
+- [Quickstart](https://docs.zylon.ai/en/developer-manual/get-started/quickstart.md): Make your first Zylon API call in under 2 minutes.
+- [Token Management](https://docs.zylon.ai/en/developer-manual/get-started/token-management.md): Choose the right token flow: Backoffice cross-API token or Workspace-only token.
+- [Welcome to Zylon](https://docs.zylon.ai/en/index.md): Zylon is an enterprise AI platform delivering private generative AI and on-premise AI software for regulated industries, enabling secure deployment inside enterprise infrastructure without external cloud dependencies.
+- [Advanced Customization](https://docs.zylon.ai/en/operator-manual/ai-presets/advanced-customization.md): Customize AI models for specialized workloads including fine-tuned models and multi-model configurations
+- [Configuration Options](https://docs.zylon.ai/en/operator-manual/ai-presets/configuration.md): Configure enhanced capabilities, multi-GPU setups, and shared memory for optimal performance
+- [Getting Started](https://docs.zylon.ai/en/operator-manual/ai-presets/getting-started.md): Learn the fundamentals of AI presets and how to configure them for your hardware
+- [AI Presets Reference](https://docs.zylon.ai/en/operator-manual/ai-presets/presets.md): Complete reference of available AI presets including base, alternative, experimental, and deprecated configurations
+- [Troubleshooting](https://docs.zylon.ai/en/operator-manual/ai-presets/troubleshooting.md): Diagnose and resolve issues with AI presets and custom configurations
+- [Auditability & AI Governance](https://docs.zylon.ai/en/operator-manual/auditability-ai-safety/index.md): Auditability, traceability, evidence preservation, governance, and AI accountability capabilities in Zylon.
+- [LDAP Directory Authentication](https://docs.zylon.ai/en/operator-manual/authentication/ldap.md): Configure Zylon to authenticate users against an LDAP directory or Active Directory, enabling centralized login without an external identity provider.
+- [Accessing the Backoffice](https://docs.zylon.ai/en/operator-manual/backoffice/accessing-the-backoffice.md): Open the Backoffice from a Workspace or a direct URL.
+- [Introduction](https://docs.zylon.ai/en/operator-manual/backoffice/introduction.md): Overview of the Zylon Backoffice.
+- [Logging, Evidence, and SIEM Delivery](https://docs.zylon.ai/en/operator-manual/backoffice/log-delivery-storage.md): Governance guide to Zylon logging, evidence preservation, auditability, traceability, and SIEM delivery.
+- [Platform Backoffice](https://docs.zylon.ai/en/operator-manual/backoffice/platform-backoffice.md): Operator controls for accounts, roles, gateways, and service status.
+- [Roles and Permissions](https://docs.zylon.ai/en/operator-manual/backoffice/roles-and-permissions.md): Backoffice roles, access levels, and responsibilities.
+- [Usage Dashboard](https://docs.zylon.ai/en/operator-manual/backoffice/usage-dashboard.md): Monitor AI usage across gateways, API tokens, and Workspace activity.
+- [Zylon CLI](https://docs.zylon.ai/en/operator-manual/configuration/cli.md): All the commands available in the CLI
+- [Hard delete](https://docs.zylon.ai/en/operator-manual/configuration/cron-tasks/hard-delete.md): Configure the retention policy used by the workspace cleanup task
+- [Sync](https://docs.zylon.ai/en/operator-manual/configuration/cron-tasks/sync.md): Configure the scheduled integration sync task
+- [Audit Log](https://docs.zylon.ai/en/operator-manual/configuration/features/feat-audit.md)
+- [Database Tool Connector](https://docs.zylon.ai/en/operator-manual/configuration/features/feat-database.md)
+- [Vision File Processing](https://docs.zylon.ai/en/operator-manual/configuration/features/feat-file-vision.md)
+- [MCP Tool Connector](https://docs.zylon.ai/en/operator-manual/configuration/features/feat-mcp.md)
+- [Multimodalility capabilities](https://docs.zylon.ai/en/operator-manual/configuration/features/feat-multimodal.md)
+- [Project Custom Instructions](https://docs.zylon.ai/en/operator-manual/configuration/features/feat-project-custom-instructions.md)
+- [Web Extract](https://docs.zylon.ai/en/operator-manual/configuration/features/feat-webextract.md)
+- [Web Search](https://docs.zylon.ai/en/operator-manual/configuration/features/feat-websearch.md)
+- [Log Delivery and Storage](https://docs.zylon.ai/en/operator-manual/configuration/features/log-delivery-storage.md): Configure Zylon log storage, syslog delivery, and HTTP delivery.
+- [Configuration Overview](https://docs.zylon.ai/en/operator-manual/configuration/index.md): Complete guide to configuring your Zylon instance
+- [n8n](https://docs.zylon.ai/en/operator-manual/configuration/n8n.md)
+- [Ports and DNS](https://docs.zylon.ai/en/operator-manual/configuration/network/ports-and-dns.md)
+- [Proxy](https://docs.zylon.ai/en/operator-manual/configuration/network/proxy.md)
+- [Metrics Destinations](https://docs.zylon.ai/en/operator-manual/configuration/observability/destinations.md)
+- [External Grafana Dashboard](https://docs.zylon.ai/en/operator-manual/configuration/observability/external-grafana-dashboard.md)
+- [How to configure observability](https://docs.zylon.ai/en/operator-manual/configuration/observability/index.md)
+- [Platform Metrics](https://docs.zylon.ai/en/operator-manual/configuration/observability/platform-metrics.md)
+- [Performance tweaks](https://docs.zylon.ai/en/operator-manual/configuration/performance.md)
+- [Search](https://docs.zylon.ai/en/operator-manual/configuration/search.md)
+- [Whitelabel](https://docs.zylon.ai/en/operator-manual/configuration/whitelabel.md)
+- [How to use this manual](https://docs.zylon.ai/en/operator-manual/index.md)
+- [Full-Airgap Installation](https://docs.zylon.ai/en/operator-manual/installation/airgap.md): Install Zylon in completely offline environments
+- [Hardware requirements](https://docs.zylon.ai/en/operator-manual/installation/hardware-requirements.md)
+- [Getting Started](https://docs.zylon.ai/en/operator-manual/installation/index.md): Choose your installation mode based on your security and connectivity needs
+- [Install Zylon (Legacy)](https://docs.zylon.ai/en/operator-manual/installation/legacy.md): A guide to install Zylon on a single instance
+- [Online Installation](https://docs.zylon.ai/en/operator-manual/installation/online.md): Install Zylon with full internet access
+- [Semi-Airgap Installation](https://docs.zylon.ai/en/operator-manual/installation/semi-airgap.md): Install Zylon in environments with restricted internet access
+- [Uninstall](https://docs.zylon.ai/en/operator-manual/installation/uninstall.md)
+- [Airgap Your Server](https://docs.zylon.ai/en/operator-manual/instance-hardening/airgap-your-server.md)
+- [Disk Encryption](https://docs.zylon.ai/en/operator-manual/instance-hardening/disk-encryption.md): Encrypt your Zylon server's disk to protect data at rest on Ubuntu 24.04
+- [Security overview](https://docs.zylon.ai/en/operator-manual/instance-hardening/index.md): Guides for securing and hardening your Zylon server against unauthorized access and network exposure
+- [Claromentis](https://docs.zylon.ai/en/operator-manual/knowledge-base/claromentis.md)
+- [Confluence](https://docs.zylon.ai/en/operator-manual/knowledge-base/confluence.md)
+- [Confluence Server](https://docs.zylon.ai/en/operator-manual/knowledge-base/confluence-server.md)
+- [Samba File System](https://docs.zylon.ai/en/operator-manual/knowledge-base/file-system.md)
+- [Knowledge Connectors](https://docs.zylon.ai/en/operator-manual/knowledge-base/index.md)
+- [SharePoint](https://docs.zylon.ai/en/operator-manual/knowledge-base/sharepoint.md)
+- [Google Integration (SSO)](https://docs.zylon.ai/en/operator-manual/openid/google.md)
+- [Microsoft Entra Integration (SSO)](https://docs.zylon.ai/en/operator-manual/openid/microsoft.md)
+- [Backups and Disaster Recovery](https://docs.zylon.ai/en/operator-manual/operations/backup.md)
+- [Store Zylon Data on a Separate Disk](https://docs.zylon.ai/en/operator-manual/operations/data-disk.md): Move Zylon's data directory to a dedicated disk or partition for additional storage capacity.
+- [Sys Admin Dashboard](https://docs.zylon.ai/en/operator-manual/operations/sys-admin-dashboard.md): Monitor and manage system health, performance, and user activities with the Sys Admin Dashboard.
+- [AI Inference Performance](https://docs.zylon.ai/en/operator-manual/troubleshooting/ai.md): Troubleshooting guide for diagnosing and improving AI inference performance in Zylon.
+- [Exporting Logs](https://docs.zylon.ai/en/operator-manual/troubleshooting/exporting-logs.md)
+- [Nvidia Drivers](https://docs.zylon.ai/en/operator-manual/troubleshooting/nvidia-drivers.md)
+- [General issues](https://docs.zylon.ai/en/operator-manual/troubleshooting/troubleshoot.md)
+- [Adding Company Context](https://docs.zylon.ai/en/user-manual/adding-company-context.md): Manage the organization-level context in the admin area.
+- [Adding custom instructions](https://docs.zylon.ai/en/user-manual/adding-custom-instructions.md): Provide project-specific instructions used in every chat in the project.
+- [Answer in bulk](https://docs.zylon.ai/en/user-manual/agent-flows/answer-in-bulk.md): Ask many questions at once and get a table of answers with citations.
+- [Generate draft](https://docs.zylon.ai/en/user-manual/agent-flows/generate-draft.md): Create a new document that follows the tone and content of selected sources.
+- [Open blank page](https://docs.zylon.ai/en/user-manual/agent-flows/open-blank-page.md): Start from scratch and optionally use AI to help you write.
+- [Read and extract](https://docs.zylon.ai/en/user-manual/agent-flows/read-and-extract.md): Define topics and extract all relevant passages across long documents, with citations.
+- [Summarize file](https://docs.zylon.ai/en/user-manual/agent-flows/summarize-file.md): Produce a comprehensive summary of long documents or folders.
+- [Claromentis connector](https://docs.zylon.ai/en/user-manual/connectors/claromentis.md): Import folders and files from Claromentis and keep them in sync on demand.
+- [Confluence connector](https://docs.zylon.ai/en/user-manual/connectors/confluence.md): Import folders and files from Confluence and keep them in sync on demand.
+- [Confluence Server connector](https://docs.zylon.ai/en/user-manual/connectors/confluence-server.md): Import pages from an on-premise Confluence Server / Data Center instance and keep them in sync on demand.
+- [File System Connector](https://docs.zylon.ai/en/user-manual/connectors/file-system.md): Import folders and files from an SMB server and keep them in sync on demand.
+- [SharePoint connector](https://docs.zylon.ai/en/user-manual/connectors/sharepoint.md): Import folders and files from SharePoint and keep them in sync on demand.
+- [Creating a project](https://docs.zylon.ai/en/user-manual/creating-a-project.md): Create a new project and understand where it lives by default.
+- [Engagement Analytics](https://docs.zylon.ai/en/user-manual/engagement-analytics.md): Admin‑only, aggregated view (usage dashboard) to understand adoption over time.
+- [First Day FAQs](https://docs.zylon.ai/en/user-manual/first-day-faqs.md): Quick answers to common questions when starting with Zylon Workspace
+- [Group chats](https://docs.zylon.ai/en/user-manual/group-chats.md): Start collaborative chats in a project and convert private chats when needed.
+- [Inline AI in the editor](https://docs.zylon.ai/en/user-manual/inline-ai-in-editor.md): Use AI on selections to improve or generate content, optionally grounded in your knowledge base.
+- [Linking knowledge bases](https://docs.zylon.ai/en/user-manual/linking-knowledge-bases.md): Reuse content from other projects without re‑ingesting.
+- [First steps in n8n](https://docs.zylon.ai/en/user-manual/n8n.md)
+- [Password recovery](https://docs.zylon.ai/en/user-manual/password-recovery.md): Change your password or reset it in case you have forgotten it
+- [Querying company documents](https://docs.zylon.ai/en/user-manual/querying-company-documents.md): Ask questions over your project’s knowledge base, including connected repositories.
+- [Quick Start Guide](https://docs.zylon.ai/en/user-manual/quick-start-guide.md): Get productive with Zylon Workspace in 15 minutes
+- [Real‑time collaboration](https://docs.zylon.ai/en/user-manual/real-time-collaboration.md): Co‑edit AI Document outputs with teammates.
+- [Roles and permissions](https://docs.zylon.ai/en/user-manual/roles-and-permissions.md): Access to the knowledge base is controlled by the project roles.
+- [Search company documents](https://docs.zylon.ai/en/user-manual/search-company-documents.md): Use Search to discover documents imported from company repositories you can access.
+- [Search workspace content](https://docs.zylon.ai/en/user-manual/search-workspace-content.md): Find projects, chats, AI Documents, and files you have access to using Search.
+- [Sharing with colleagues](https://docs.zylon.ai/en/user-manual/sharing-with-colleagues.md): Share a project with everyone in the organization or invite specific teammates to collaborate.
+- [Chat attachments](https://docs.zylon.ai/en/user-manual/tools/attachments.md): Attach images to your messages so Zylon can see and reason about visual content.
+- [Database connector](https://docs.zylon.ai/en/user-manual/tools/database-connector.md)
+- [Extended thinking](https://docs.zylon.ai/en/user-manual/tools/extended-thinking.md): Enable deeper, step‑by‑step reasoning for richer answers.
+- [Using tools — overview](https://docs.zylon.ai/en/user-manual/tools/introduction-to-tools.md): Tools extend the chat agent for deeper reasoning and data analysis.
+- [Mcp connector](https://docs.zylon.ai/en/user-manual/tools/mcp-connector.md)
+- [Numeric analysis](https://docs.zylon.ai/en/user-manual/tools/numeric-analysis.md): Analyze a CSV from your knowledge base with natural‑language queries.
+- [Web search](https://docs.zylon.ai/en/user-manual/tools/web-search.md): Browse the internet to find up-to-date information.
+- [Uploading files](https://docs.zylon.ai/en/user-manual/uploading-files.md): Add knowledge to a project by uploading local files or importing from a connector.
+- [What is Zylon Workspace?](https://docs.zylon.ai/en/user-manual/what-is-zylon-workspace.md): Learn about Zylon's collaborative AI workspace and how it transforms company knowledge into productivity
+- [When to use AI Documents](https://docs.zylon.ai/en/user-manual/when-to-use-agent-flows.md): Use AI Documents for comprehensive document work that goes beyond quick chat answers.
+- [When to use the chat assistant](https://docs.zylon.ai/en/user-manual/when-to-use-chat-assistant.md): Ask direct questions or use it as a thought partner for open-ended tasks.
+- [Workspace Look & Feel](https://docs.zylon.ai/en/user-manual/workspace-look-and-feel.md): Customize Zylon Workspace branding and appearance for your organization
+
+## OpenAPI Specs
+
+- [workspace](https://docs.zylon.ai/api-reference/workspace.json)
+- [pgpt](https://docs.zylon.ai/api-reference/pgpt.json)

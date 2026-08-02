@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/authentication/auth
+docs: https://docs.zylon.ai/en/developer-manual/build-with-zylon/workspace-api/authentication/openid
+summary:
+  types: [http, oauth2, openIdConnect]
+  api_key_in: [header]
+  oauth2_flows: [authorizationCode]
+  note: >-
+    Zylon is deployed on-premise; there is no single hosted base URL. All calls
+    target the customer's own deployment host ({BASE_URL}). Auth is documented,
+    not derived from a published OpenAPI (none is published publicly).
+schemes:
+- name: BearerToken
+  type: http
+  scheme: bearer
+  description: >-
+    API token passed as `Authorization: Bearer {API_TOKEN}` on every ZylonGPT
+    and Workspace API request.
+  source: docs
+- name: CredentialsSession
+  type: http
+  scheme: session
+  description: >-
+    POST /api/v1/auth/login exchanges email + password for an account session;
+    POST /api/v1/auth/register creates a credentials account. When LDAP is
+    enabled the server attempts LDAP first then falls back to local credentials.
+  source: docs
+- name: OpenIDConnect
+  type: openIdConnect
+  description: >-
+    SSO login redirects (Google / Microsoft) and integration OAuth flows for
+    Confluence and SharePoint via the Workspace API OpenID & OAuth endpoints.
+  source: docs
+directory_integration:
+- Active Directory / LDAP (enterprise directory integration, added v1.56.0)

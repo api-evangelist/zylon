@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.zylon.ai/en/developer-manual/build-with-zylon/zylon-gpt-api/handling-stop-reasons
+format: stop-reason
+envelope_field: stop_reason
+description: >-
+  Every successful ZylonGPT Messages response carries a stop_reason describing
+  why the model stopped. When a request fails, the stop_reason matches one of
+  the error values below and the response is returned as an error envelope
+  (Anthropic-style error typing).
+stop_reasons_success:
+- code: end_turn
+  meaning: The model completed its response normally.
+- code: max_tokens
+  meaning: The response hit the max_tokens limit.
+  action: Increase max_tokens or ask the model to continue.
+- code: stop_sequence
+  meaning: The model generated one of your custom stop sequences.
+- code: tool_use
+  meaning: The model wants you to run a tool.
+  action: Execute the tool and return a tool_result block.
+- code: pause_turn
+  meaning: The model intentionally paused.
+  action: Resume the conversation when ready.
+- code: refusal
+  meaning: The model refused for safety or policy reasons.
+errors:
+- code: invalid_request_error
+  meaning: Request inputs are invalid (artifacts not fully ingested, missing tool config, invalid IDs).
+  action: Fix inputs and retry.
+- code: permission_error
+  meaning: The token lacks access to the referenced resource.
+  action: Check org/project membership and artifact visibility.
+- code: request_too_large
+  meaning: Input size or token count exceeds model limits.
+  action: Reduce input, chunk content, or lower context size.
+- code: api_error
+  meaning: An internal server error occurred.
+  action: Retry with exponential backoff.
+- code: overloaded_error
+  meaning: The system is temporarily overloaded.
+  action: Retry with backoff and jitter.

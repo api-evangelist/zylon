@@ -1,0 +1,55 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.zylon.ai/en/developer-manual/build-with-zylon/working-with-messages
+docs: https://docs.zylon.ai/en/api-reference/how-to-use
+deployment_model: >-
+  On-premise / private. There is no public hosted base URL; every request is
+  made against the customer's own deployment host ({BASE_URL}). Two API tiers:
+  low-level ZylonGPT (/api/gpt/v1) and high-level Workspace (/api/v1), plus a
+  Backoffice API for operational workflows.
+authentication:
+  style: bearer-token
+  header: 'Authorization: Bearer {API_TOKEN}'
+  session: 'POST /api/v1/auth/login (credentials -> session), LDAP fallback'
+  sso: OpenID Connect (Google/Microsoft) + integration OAuth (Confluence/SharePoint)
+request_response:
+  message_shape: >-
+    Anthropic-style message envelope: content blocks (text/tool_use/tool_result),
+    role, and a stop_reason on every successful response. IDs are prefixed
+    (msg_, acct_).
+  streaming:
+    supported: true
+    transport: SSE (text/event-stream)
+    trigger: 'set "stream": true; events include content_block_delta token deltas'
+  async:
+    supported: true
+    pattern: >-
+      POST /api/gpt/v1/messages/async returns a message_id; stream via
+      /messages/async/{message_id}/stream, poll via /status, cancel via /cancel.
+      Same request body as sync.
+  openai_compatible: true
+  anthropic_compatible: true
+idempotency:
+  supported: false
+  note: >-
+    No idempotency-key header is documented for the ZylonGPT or Workspace API as
+    of the current docs. Async messages return a stable message_id for polling
+    but this is not a request-dedup key.
+error_envelope:
+  style: stop_reason error types (Anthropic-style)
+  see: errors/zylon-error-codes.yml
+  values: [invalid_request_error, permission_error, request_too_large, api_error, overloaded_error]
+tools:
+  built_in: [semantic-search, tabular-analysis, database-query, web-fetch, web-search]
+  custom: Define your own tools using JSON Schema.
+  mcp: >-
+    Zylon can host and call MCP servers as tools within a chat (see private-gpt
+    "tools, MCP" support).
+versioning:
+  scheme: URI path (/api/v1, /api/gpt/v1) + platform semver (see changelog/)
+  stability: 'Zylon APIs are under active development; minor adjustments may occur.'
+cross_links:
+  errors: errors/zylon-error-codes.yml
+  authentication: authentication/zylon-authentication.yml
+  lifecycle: lifecycle/zylon-lifecycle.yml
+  changelog: changelog/zylon-changelog.yml
